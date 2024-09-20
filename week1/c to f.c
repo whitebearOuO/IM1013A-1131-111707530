@@ -9,3 +9,6 @@ int main(void)
     fFahrenheit= fCelsius*9/5+32;
     printf("Fahrenheit is:  %3.2f\n",fFahrenheit); //%3.2f 3:代列印的數佔3位元寬，2:小數後兩位
 }//end main
+
+//c的if else似乎跟c++一樣
+//不過下次再說
