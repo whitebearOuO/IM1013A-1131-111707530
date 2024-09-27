@@ -27,6 +27,3 @@ int main(void)
             printf("輸入錯誤，請重新輸入\n");
     }//end while input
 }//end main
-
-//c的if else似乎跟c++一樣
-//不過下次再說
