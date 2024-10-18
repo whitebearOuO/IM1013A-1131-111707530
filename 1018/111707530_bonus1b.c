@@ -25,7 +25,7 @@ int main(void)
                 printf("Number of passes is: %d\n", pass);
                 printf("Number of fails is: %d\n", counter-pass);
                 printf("Pass rate is: %3.2f%\n", (float)pass/(float)counter*100); //int to float avoid wrong thing
-                if((float)pass/(float)counter*100>=60) // if pass rate>60
+                if(pass>8) // If more than eight students passed the exam, print the message “Bonus to instructor!”
                     printf("Bonus to instructor!\n");
             }
         }
