@@ -2,7 +2,7 @@
 int main(void)
 {
     int student;
-    int counter;
+    int counter=1;
     int grade;
     int sum;
     int avg;
@@ -21,18 +21,13 @@ int main(void)
         }
         else
         {
-            while(counter!=student)
+            while(counter<=student)
             {
-                grade=0;
-                printf("enter student grade:\n");
+                printf("enter student %d grade:\n",counter);
                 scanf("%d",&grade);
-                printf("grade %d\n",&grade);
                 if(grade>=0 && grade<=100)
                 {
-                    printf("grade %d\n",&grade);
-                    printf("sum %d\n",&sum);
                     sum=sum+grade;
-                    printf("sum %d\n",&sum);
                     counter++;
                 }
                 else
@@ -40,8 +35,8 @@ int main(void)
                     printf("grade must be >=0 and <=100.\n");
                 }
             }
+            avg=sum/student;
+            printf("the average is: %d \n", avg);
         }
-        avg=sum/student;
-        printf("the average is: %d \n", &avg);
     }
 }
