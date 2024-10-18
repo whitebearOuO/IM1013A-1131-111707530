@@ -6,9 +6,9 @@ int main(void)
     int grade;
     int sum;
     int avg;
-    printf("How many students:\n");
-    while(scanf("%d",&student))
+    while(printf("How many students:\n"))
     {
+        scanf("%d",&student);
         if(student<0)
         {
             printf("number of students must >=0\n");
