@@ -13,7 +13,7 @@ int main(void)
     int grade;// one grade
 
     //loop until user types end-of-fild key sequence
-    while((grade=getchar()!=EOF))
+    while((grade=getchar())!=EOF)
     {
 
         //determine which grade was input
@@ -26,7 +26,7 @@ int main(void)
 
             case 'B'://grade was uppercase B
             case 'b'://or lowercase b
-                ++aCount;
+                ++bCount;
                 break;
             
             case 'C'://grade was uppercase C
