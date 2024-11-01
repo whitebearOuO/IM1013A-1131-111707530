@@ -14,7 +14,7 @@ int main()
 
     while(printf("Enter your chose[1/2/3]: "), scanf("%d", &chose))
     {
-        if(chose==3)
+        if(chose==3) //end program
         {
             printf("Program end.\n");
             break;
@@ -109,11 +109,11 @@ int main()
                     int sum=0;
                     printf("Enter the number of intergers: ");
                     scanf("%d", &number);
-                    while(counter<=5)
+                    while(counter<=number)
                     {
                         printf("Enter interger %d: ", counter);
                         scanf("%d", &input);
-                        if(input>=0) //is postive
+                        if(input>0) //is postive
                         {
                             int cnt=0;
                             //if number is less than/equal to 1,
@@ -145,6 +145,6 @@ int main()
                 default:
                     printf("There is no this option!\n");
             }//end program menu switch
-        }//else
+        }//end else
     }//end while menu
 }//end main
