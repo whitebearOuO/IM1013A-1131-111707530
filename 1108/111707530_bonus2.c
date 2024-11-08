@@ -55,3 +55,10 @@ int main()
         }
     }// end while loop
 }// end main
+
+/*
+scanf(" %c", &confirm);
+getchar();
+會遇到的問題，n後面一大串都算n
+%前面的空白是省略吃到的空白，getchar是只吃到那一個字元
+*/
